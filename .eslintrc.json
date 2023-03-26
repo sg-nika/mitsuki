@@ -1,9 +1,22 @@
 {
-  "extends": ["next/core-web-vitals", "airbnb", "airbnb-typescript", "airbnb/hooks"],
+  "extends": ["next/core-web-vitals", "airbnb", "airbnb/hooks"],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
   "rules": {
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+   ],
+   "linebreak-style": 0,
+   "jsx-quotes": [2, "prefer-single"]
   }
 }
