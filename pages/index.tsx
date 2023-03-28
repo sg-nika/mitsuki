@@ -16,8 +16,11 @@ export default function Home() {
       backgroundColor: theme.palette.primary.light,
       display: 'flex',
       flexDirection: 'column',
-      '.MuiBox-root': {
+      '& > .MuiBox-root': {
         padding: '20px 40px',
+      },
+      '& .MuiTypography-root': {
+        // textShadow: `4px 4px 4px ${theme.palette.primary.dark}`,
       },
     },
   };
