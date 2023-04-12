@@ -68,6 +68,16 @@ export default function Menu() {
       width: '100%',
       flex: '1',
     },
+    backgroundImage: {
+      backgroundImage: 'url(\'/menu_bg_image.png\')',
+      opacity: '.15',
+      minHeight: '700px',
+      width: '100%',
+      display: 'block',
+      position: 'absolute',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
+    },
   };
 
   const menu: MenuItem[] = [
@@ -121,7 +131,7 @@ export default function Menu() {
     return (
       <Card sx={styles.cardsContainer} key={`${foodName}`}>
         <Box sx={styles.image}>
-          <Image src={image} alt={foodName} width={400} height={300} />
+          <Image src={image} alt={foodName} width={300} height={200} />
         </Box>
         <Box sx={styles.cardContent}>
           <Typography variant='h4'>{formattedFoodName}</Typography>
@@ -142,11 +152,15 @@ export default function Menu() {
   });
 
   return (
-    <Box id='menu' sx={styles.menu}>
-      <Typography variant='h2'>Menu Items</Typography>
-      <Box sx={styles.menuInnerContainer}>
-        {menuItems}
+    <>
+      <Box sx={styles.backgroundImage} />
+      <Box id='menu' sx={styles.menu}>
+        <Typography variant='h3'>Menu Items</Typography>
+        <Box sx={styles.menuInnerContainer}>
+          {menuItems}
+        </Box>
       </Box>
-    </Box>
+    </>
+
   );
 }

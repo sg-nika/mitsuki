@@ -51,8 +51,8 @@ export default function About() {
           `}
         </Typography>
 
-        <ChefIcon />
-        <Avatar alt='Owner' src='/Hiromitzzzzzzzzzz.png' />
+        {/* <ChefIcon />
+        <Avatar alt='Owner' src='/Hiromitzzzzzzzzzz.png' /> */}
       </Box>
 
     </Box>
