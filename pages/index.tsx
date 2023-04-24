@@ -10,6 +10,14 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from '@/styles/theme';
 import { Box } from '@mui/material';
 
+import { IBM_Plex_Mono } from '@next/font/google';
+
+const IBM = IBM_Plex_Mono({
+  subsets: ['latin'],
+  weight: '500'
+});
+
+
 
 export default function Home() {
   const styles = {
@@ -20,7 +28,10 @@ export default function Home() {
       '& > .MuiBox-root': {
         padding: '40px',
       },
-      fontFamily: 'Roboto',
+      '& .MuiTypography-root': {
+        ...IBM.style,
+        textShadow: `.5px .5px .5px ${theme.palette.primary.dark}`,
+      }
     },
   };
 
