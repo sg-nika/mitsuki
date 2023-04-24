@@ -31,6 +31,7 @@ export default function Hero() {
       position: 'absolute',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
+      zIndex: '1'
     },
     content: {
       display: 'flex',
@@ -70,8 +71,8 @@ export default function Hero() {
           <Button sx={styles.button} variant='outlined' component='a' href='#menu'>Menu</Button>
         </Box>
 
-        {!isMobile
-        && <Image style={styles.image} src='/Logo.png' alt='Mitsuki Japanese Restaurant' width={400} height={400} />}
+        {/* {!isMobile
+        && <Image style={styles.image} src='/Logo.png' alt='Mitsuki Japanese Restaurant' width={400} height={400} />} */}
       </Box>
     </>
 

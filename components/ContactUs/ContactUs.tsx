@@ -42,7 +42,7 @@ export default function ContactUs() {
     schedule: {
       display: 'flex',
       flexDirection: 'column',
-      width: '200px',
+      width: '250px',
       gap: '8px',
     },
     dayHours: {

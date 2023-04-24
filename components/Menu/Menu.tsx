@@ -35,7 +35,6 @@ export default function Menu() {
       justifyContent: 'center',
       flexDirection: isMobile ? 'column' : 'row',
       gap: '40px',
-
     },
     cardsContainer: {
       display: 'flex',
@@ -77,6 +76,8 @@ export default function Menu() {
       position: 'absolute',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
+      zIndex: '1',
+      top: '1483px',
     },
   };
 
@@ -153,7 +154,10 @@ export default function Menu() {
 
   return (
     <>
-      <Box sx={styles.backgroundImage} />
+      {!isMobile &&
+        <Box sx={styles.backgroundImage} />
+      }
+     
       <Box id='menu' sx={styles.menu}>
         <Typography variant='h3'>Menu Items</Typography>
         <Box sx={styles.menuInnerContainer}>
@@ -161,6 +165,5 @@ export default function Menu() {
         </Box>
       </Box>
     </>
-
   );
 }

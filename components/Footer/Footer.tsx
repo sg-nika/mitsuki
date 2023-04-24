@@ -12,5 +12,5 @@ export default function Footer() {
     },
   };
 
-  return (<Box sx={styles.footer}>© Copyright 2023 Mitsuki. All rights reserved.</Box>);
+  return (<Box sx={styles.footer}>© Copyright 2023 Mitsuki. All rights reserved.</Box>)
 }
