@@ -30,7 +30,7 @@ export default function Home() {
       },
       '& .MuiTypography-root': {
         ...IBM.style,
-        textShadow: `.5px .5px .5px ${theme.palette.primary.dark}`,
+        // textShadow: `.5px .5px .5px ${theme.palette.primary.dark}`,
       }
     },
   };

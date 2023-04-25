@@ -24,7 +24,7 @@ export default function ContactUs() {
       flexDirection: isMobile ? 'column' : 'row',
       justifyContent: 'space-around',
       width: '100%',
-      gap: '24px',
+      gap: '30px',
     },
     infoBox: {
       display: 'flex',
@@ -42,7 +42,7 @@ export default function ContactUs() {
     schedule: {
       display: 'flex',
       flexDirection: 'column',
-      width: '250px',
+      width: '300px',
       gap: '8px',
     },
     dayHours: {

@@ -103,7 +103,6 @@ export default function Menu() {
       ],
       image: '/takoyaki.png',
     },
-
     {
       foodName: 'gyoza',
       variations: [
@@ -154,9 +153,9 @@ export default function Menu() {
 
   return (
     <>
-      {!isMobile &&
+      {/* {!isMobile &&
         <Box sx={styles.backgroundImage} />
-      }
+      } */}
      
       <Box id='menu' sx={styles.menu}>
         <Typography variant='h3'>Menu Items</Typography>

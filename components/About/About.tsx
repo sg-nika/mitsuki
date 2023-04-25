@@ -23,6 +23,7 @@ export default function About() {
       display: 'flex',
       flexDirection: 'column',
       gap: '20px',
+      width: '700px'
     },
     title: {
       display: 'flex',
@@ -41,8 +42,8 @@ export default function About() {
           About Mitsuki
           <GyozaIcon />
         </Typography>
-        <Typography variant='h3'>Authentic Japanese Food</Typography>
-        <Typography variant='body1' sx={{ whiteSpace: 'pre-line', maxWidth: '70%' }}>
+        <Typography variant='h3' sx={{width: 'fit-content'}}>Authentic Japanese Food</Typography>
+        <Typography variant='body1' sx={{ whiteSpace: 'pre-line' }}>
           {`Indulge in the exquisite flavors of genuine Japanese cuisine! At our Japanese restaurant, we specialize in serving authentic dishes like Takoyaki and Gyoza, crafted by our skilled chefs using time-honored techniques and the freshest ingredients.
 
           Embark on a culinary journey with us at our inaugural bazaar in the vibrant Arcovia City, conveniently located near Landers Superstore.
